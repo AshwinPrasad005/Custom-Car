@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>PRO-VR C151</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="js/Base.js"></script>
+    <script src="js/Car.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- PLANE BASE -->
+      <a-entity id="base" base></a-entity>
+      <!-- CAR MODEL -->
+      <a-entity id="car-model" car-model></a-entity>
+
+      <!-- CAMERA -->
+      <a-entity
+        camera
+        look-controls
+        wasd-controls
+        position="0 50 250"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
